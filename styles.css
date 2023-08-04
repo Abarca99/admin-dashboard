@@ -1,0 +1,68 @@
+:root {
+    --white-color : white
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 30vw 70vw;
+    grid-template-rows: 20vh 80vh;
+}
+
+.left-container {
+    background-color: rgb(35, 116, 238);
+    grid-column: 1 / 2;
+    grid-row: 1 / 4
+}
+
+.top-container {
+    background-color: bisque;
+    grid-column: 2 / 4;
+}
+
+.bottom-container {
+    background-color: cadetblue;
+    grid-column: 2 / 4;
+    grid-row: 2 / 4
+}
+
+.shortcuts {
+    display: grid;
+    grid-template-rows: 110px 300px 340px;
+    row-gap: 40px;
+}
+
+.shortcuts h1 {
+    justify-self: center;
+    color: var(--white-color);
+    grid-row: 1 / 2;
+}
+
+.profile-shortcuts {
+    grid-row: 2 / 3;
+}
+
+.support-shortcuts {
+    margin-left: 15px;
+    color: var(--white-color);
+    grid-row: 3 / 4;
+}
+
+.profile-shortcuts,
+.support-shortcuts {
+    margin-left: 25px;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--white-color);
+
+}
+
+.support-shortcuts div,
+ .profile-shortcuts div {
+    margin: 20px;
+}
